@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "66d84aa55d3d7bb609ea36e3"
+  },
+  "name": "Admin_Kumar",
+  "email": "visutha@evvisolutions.com",
+  "password": "$2a$12$kdELC909DFhEYKVQ/SJ0KeAfXLM1OsXMjjxZTLkchQ2sQ7YIPH2A2",
+  "phone_number": "1234567890",
+  "role": "admin",
+  "address": "123 Main Street, Anytown, USA",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-04T11:55:17.035Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-04T11:55:17.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e0443d2733c2033b0a2dcd"
+  },
+  "name": "qwertyu",
+  "email": "rasimax55@gmail.com",
+  "password": "$2b$10$jr6WbC3.fkyBOZxB4319wuc06FZGeLlnG9GzWN5BEx2Os7zZRo7wS",
+  "phone_number": "7647436896",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-10T13:06:05.027Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-10T13:06:05.027Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed49b48b58d0e69340ed22"
+  },
+  "name": "testtttt",
+  "email": "testtttt@gmail.com",
+  "password": "$2b$10$PrX2I0.3ADdU78lCHibVAuXp6uPVHSLT08In0YC3nvnFgyowtQw0y",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-20T10:08:52.355Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T10:08:52.355Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66eeab77bc64166e41a8847e"
+  },
+  "name": "sample",
+  "email": "sampple@mail.com",
+  "password": "$2a$12$kEUmh.JOtdsB0hnuSYzxJ.VLO0SGIGi2vOHCW.WO5kUtubiflz7gy",
+  "phone_number": "1234567890",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-21T11:18:15.360Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-21T11:18:15.360Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "name": "Kumar",
+  "email": "rvisutha@gmail.com",
+  "password": "$2a$12$7TC/BjyJ42UzNAhdIPXKNuuCWZ8ekrGVrStD7ALJsCJ3y6KasasFm",
+  "phone_number": "987654321",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-10-01T07:31:32.148Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-10T11:41:13.070Z"
+  },
+  "__v": 0,
+  "otp": null,
+  "customer_type": "online",
+  "otp_expiry": {
+    "$date": "2025-02-12T07:16:07.022Z"
+  },
+  "otp_verified": false
+},
+{
+  "_id": {
+    "$oid": "674035b4b6e69d07fcde0bee"
+  },
+  "name": "Iswarya. P Padithurai",
+  "email": "ishudarju46@gmail.com",
+  "password": "$2b$10$0/llqXvYSmL485DNqvQUpO6OrsUx9q11rrhLDoam5.YjJ29MqZZp2",
+  "phone_number": "08220783002",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-11-22T07:41:40.145Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-22T07:41:40.145Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6815ab336304ec0c94da445b"
+  },
+  "name": "Visutha",
+  "email": "rvisutha@gmail.\ncom",
+  "password": "$2a$12$7TC/BjyJ42UzNAhdIPXKNuuCWZ8ekrGVrStD7ALJsCJ3y6KasasFm",
+  "customer_type": "online",
+  "phone_number": "7598282331",
+  "otp_verified": false,
+  "role": "customer",
+  "is_deleted": false,
+  "otp_expiry": {
+    "$date": "2025-05-03T05:35:47.743Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-03T05:35:47.752Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-03T05:35:47.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681c86f69f82d33b6cfc6636"
+  },
+  "name": "sankar",
+  "email": "sankar@gmail.com",
+  "password": "$2b$10$A9qfQnd0DP9yZ7V5Pz5w1.nPO35fxHPlXKchehG6a96zsWKh23InO",
+  "customer_type": "online",
+  "phone_number": "9867354623",
+  "otp_verified": false,
+  "role": "customer",
+  "is_deleted": false,
+  "otp_expiry": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682328d0b4be7773e0ebecef"
+  },
+  "name": "sankar",
+  "email": "sankar01@gmail.com",
+  "password": "$2b$10$A9qfQnd0DP9yZ7V5Pz5w1.nPO35fxHPlXKchehG6a96zsWKh23InO",
+  "customer_type": "online",
+  "phone_number": "9867354623",
+  "otp_verified": false,
+  "role": "customer",
+  "is_deleted": false,
+  "otp_expiry": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T10:27:02.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68232ef9b4be7773e0ebecf0"
+  },
+  "name": "Testone",
+  "email": "test1@gmail.com",
+  "password": "$2b$10$PrX2I0.3ADdU78lCHibVAuXp6uPVHSLT08In0YC3nvnFgyowtQw0y",
+  "role": "customer",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-20T10:08:52.355Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T10:08:52.355Z"
+  },
+  "__v": 0
+}]

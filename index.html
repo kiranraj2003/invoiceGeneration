@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Invoice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+    }
+
+    .flex-item {
+      width: 48%;
+    }
+    .flex-container-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .footer {
+    bottom: 5px;
+    left: 40px;
+    right: 40px;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+    padding-top: 3px;
+  }
+    .signature {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+
+      <h2>Tax Invoice</h2>
+
+      <div class="section flex-container">
+        <div class="flex-item">
+          <div class="section">
+           <p><span><strong>Order Details</strong></span></p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>Order ID:</strong> OD332482328129791100</p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>Order Date:</strong> 03-10-2024</p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>Invoice Date:</strong> 03-10-2024</p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>Invoice Number:</strong> BFF6325001030416</p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>PAN:</strong> AATCA0996P</p>
+            <p style="margin-bottom: 4px; margin-top: 4px;"><strong>CIN:</strong> U52510DL2019PTC359329</p>
+          </div>
+        </div>
+
+      
+        <div class="flex-item">
+          <div style="text-align: center;">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/557/391/original/qr-code-for-scanning-free-vector.jpg" alt="QrCode" width="125px" height="125px">
+            <div style="width:380px; height:auto; border:1px solid black; margin-top:10px; padding:12px; text-align:center;">
+              invoice number: <strong>INV-29324723998-17-05-2025</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="section flex-container">
+        <div class="flex-item"  style="width: 45%;"> 
+          
+          <p><strong>Vendor Details</strong><br>
+            <strong>Sold By:</strong> AARNA VENTURES PRIVATE LIMITED<br>
+          <strong>Ship-from Address:</strong> NDR warehousing private ltd,
+          SF No. 525, 526, 529-533, Okilipalayam,
+          Palladam Road, Othakalmandapam,
+          Coimbatore, Tamil Nadu, India - 641032
+          <br>GSTIN: 33AATCA0996P1ZU
+          <br>IRN: 5ebc589017353a808c6c8f18</p>
+        </div>
+       <!-- <hr style="width:1px;  "> -->
+        <div style="background-color: rgb(142, 134, 134); width:1.5px; margin-right:15px;"></div>
+        <div class="flex-item"  style="width: 35%; margin-left: 0px;">
+          <p><strong>Billing Address</strong><br>
+          Gopinath Pandian<br>
+          125/1 Pasumpon Street,
+          Thirumangalam -625706,
+          Madurai Dt., Thirumangalam,
+          Thirumangalam 625706 Tamil Nadu<br>
+          Phone: xxxxxxxxxx</p>
+        </div>
+
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Gross Amount ₹</th>
+            <th>Discounts / Coupons ₹</th>
+            <th>Taxable Value ₹</th>
+            <th>CGST ₹</th>
+            <th>SGST / UTGST ₹</th>
+            <th>Total ₹</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>SAC: 998599 Secure Packaging Fee<br>[IMEI/Serial No:] 862839071144545</td>
+            <td>1</td>
+            <td>29.00</td>
+            <td>0.00</td>
+            <td>24.58</td>
+            <td>2.21</td>
+            <td>2.21</td>
+            <td>29.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="bold">Total</td>
+            <td class="bold">1</td>
+            <td class="bold">29.00</td>
+            <td class="bold">0.00</td>
+            <td class="bold">24.58</td>
+            <td class="bold">2.21</td>
+            <td class="bold">2.21</td>
+            <td class="bold">29.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="section signature" style="padding-right: 10px;">
+        <h3 class="bold">Grand Total ₹ 29.00</h3>
+      </div>
+
+
+    <div class="section flex-container-1" >
+      <div>
+        <p><strong>Payment Details</strong></p>
+          <p>
+          <strong>Payment Mode :</strong> &nbsp; Razor Pay<br>
+          <strong>Transaction Id :</strong> &nbsp;order_Pomq1qlkPZEl1C<br>
+          <strong>Payment Date :</strong> &nbsp; 2024-10-03 14:26 IST<br>
+          </p>
+          <p><strong>Terms & Conditions</strong></p>
+          <p style="width:350px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolore.</p>
+      </div>
+      <div style="text-align: end;">
+        <p><strong>AARNA VENTURES PRIVATE LIMITED</strong><br>
+          <img src="data:image/jpeg;base64,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" alt="" width="100px" height="50px"><br>
+          Authorized Signatory</p>
+      </div>
+    </div>
+    </div>
+    
+
+    
+
+    <div class="footer " style="display:flex; justify-content: space-between;">
+ 
+      <p>Contact Flipkart: 044 - 66904500 | <a href="https://www.flipkart.com/helpcentre">www.flipkart.com/helpcentre</a></p>
+      <p style="text-align: right;">2024-10-03T22:18:24+0530 | Coimbatore, IN-TN</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "6746f30fa6979b5d60cd8782"
+  },
+  "userId": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "street": "4/99,West Street",
+  "area": "Beraka Magar",
+  "city": "Madurai.",
+  "state": "TAMIL NADU",
+  "country": "India",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2024-11-27T10:23:11.770Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T07:25:52.594Z"
+  },
+  "__v": 0,
+  "phone": "1234567890",
+  "name": "test2",
+  "pin": "625001",
+  "customerType": "online"
+},
+{
+  "_id": {
+    "$oid": "674af382f4c1ad7f2e15c65f"
+  },
+  "userId": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "street": "45/4,South Street",
+  "area": "yanaikal",
+  "city": "madurai",
+  "state": "tamilnadu",
+  "country": "India",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2024-11-30T11:14:10.572Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T07:26:41.248Z"
+  },
+  "__v": 0,
+  "phone": "1234567890",
+  "name": "tste3",
+  "customerType": "online",
+  "pin": "123456"
+},
+{
+  "_id": {
+    "$oid": "674d59c711cb81441880d74e"
+  },
+  "userId": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "street": "54/3a,NallaSamrian Nagar,",
+  "area": "Bykara",
+  "city": "MADURAI",
+  "state": "TAMIL NADU",
+  "country": "India",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2024-12-02T06:55:03.611Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T07:26:18.530Z"
+  },
+  "__v": 0,
+  "phone": "1234567890",
+  "name": "test-2",
+  "pin": "641257",
+  "customerType": "online"
+},
+{
+  "_id": {
+    "$oid": "675976330190952a63fb3ca4"
+  },
+  "userId": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "street": "26/3A",
+  "area": "Moota Colonyy",
+  "city": "MADURAI",
+  "state": "TAMIL NADU",
+  "phone": "07598282331",
+  "country": "India",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2024-12-11T11:23:31.659Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T05:43:58.444Z"
+  },
+  "__v": 0,
+  "customerType": "online",
+  "pin": "6543212"
+},
+{
+  "_id": {
+    "$oid": "67597ad90190952a63fb3d0f"
+  },
+  "userId": {
+    "$oid": "66fba5547d9ad610ef70d4ab"
+  },
+  "street": "26/3A",
+  "area": "kamaraj Nagar,Pasumalai",
+  "city": "MADURAI",
+  "state": "TAMIL NADU",
+  "phone": "07598282331",
+  "country": "India",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2024-12-11T11:43:21.746Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T16:22:08.097Z"
+  },
+  "__v": 0,
+  "customerType": "online",
+  "pin": "625010"
+}]

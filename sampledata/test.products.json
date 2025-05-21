@@ -1,0 +1,1142 @@
+[{
+  "_id": {
+    "$oid": "6792151bdff377bb0137a114"
+  },
+  "product_id": "CAT05PAT01",
+  "name": "Full Sleeve T-shirt",
+  "gender": "men",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "sub_category_id": {
+    "$oid": "679211fa40d5248161b5d0b5"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 94,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT05PAT01-XS-undefined",
+      "size": "XS",
+      "stock": 43,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "6792151bdff377bb0137a115"
+      }
+    },
+    {
+      "variant_id": "CAT05PAT01-M-undefined",
+      "size": "M",
+      "stock": 12,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "6792151bdff377bb0137a116"
+      }
+    },
+    {
+      "variant_id": "CAT05PAT01-L-undefined",
+      "size": "L",
+      "stock": 39,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "6792151bdff377bb0137a117"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT05PAT01-XS-undefined",
+      "sleeve_details": "Full Sleeve",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "6792151bdff377bb0137a118"
+      }
+    },
+    {
+      "detail_id": "CAT05PAT01-M-undefined",
+      "_id": {
+        "$oid": "6792151bdff377bb0137a119"
+      }
+    },
+    {
+      "detail_id": "CAT05PAT01-L-undefined",
+      "_id": {
+        "$oid": "6792151bdff377bb0137a11a"
+      }
+    }
+  ],
+  "description": "Upgrade your wardrobe with this must-have full-sleeve T-shirt that blends functionality with fashion. Perfect for every season and occasion!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "Evvi",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 470,
+  "selling_price": 550,
+  "offer_percentage": 0,
+  "final_price": 605,
+  "gst_percentage": 8,
+  "price_with_gst": 594,
+  "images": [
+    "Assets\\Products\\product-1737626907959.png",
+    "Assets\\Products\\product-1737626907960.png"
+  ],
+  "rating": 0,
+  "storeType": "online",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-23T10:08:27.981Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T10:08:27.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936467272490d7d5d8d2ee"
+  },
+  "product_id": "CAT06PAT01",
+  "name": "Trousers",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451a"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 79,
+  "color": "Black",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT01-M-undefined",
+      "size": "M",
+      "stock": 50,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936467272490d7d5d8d2ef"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT01-XL-undefined",
+      "size": "XL",
+      "stock": 29,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936467272490d7d5d8d2f0"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT01-M-undefined",
+      "material_type": "Viscon",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936467272490d7d5d8d2f1"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT01-XL-undefined",
+      "_id": {
+        "$oid": "67936467272490d7d5d8d2f2"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 450,
+  "selling_price": 250,
+  "offer_percentage": 0,
+  "final_price": 275,
+  "gst_percentage": 8,
+  "price_with_gst": 270,
+  "images": [
+    "Assets\\Products\\product-1737712743368.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T09:59:03.415Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T09:59:03.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936537272490d7d5d8d2f8"
+  },
+  "product_id": "CAT06PAT02",
+  "name": " Men Cargo Trousers",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451a"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 100,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT02-M-undefined",
+      "size": "M",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936537272490d7d5d8d2f9"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT02-XL-undefined",
+      "size": "XL",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936537272490d7d5d8d2fa"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT02-M-undefined",
+      "material_type": "Viscon",
+      "pattern_type": "Printed",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936537272490d7d5d8d2fb"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT02-XL-undefined",
+      "_id": {
+        "$oid": "67936537272490d7d5d8d2fc"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 350,
+  "offer_percentage": 0,
+  "final_price": 385,
+  "gst_percentage": 8,
+  "price_with_gst": 378,
+  "images": [
+    "Assets\\Products\\product-1737712951041.jpeg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:02:31.075Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:02:31.075Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936618272490d7d5d8d303"
+  },
+  "product_id": "CAT06PAT03",
+  "name": "Tracks",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451b"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 200,
+  "color": "Blue",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT03-S-undefined",
+      "size": "S",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936618272490d7d5d8d304"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT03-M-undefined",
+      "size": "M",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936618272490d7d5d8d305"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT03-XS-undefined",
+      "size": "XS",
+      "stock": 100,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936618272490d7d5d8d306"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT03-S-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Slim",
+      "_id": {
+        "$oid": "67936618272490d7d5d8d307"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT03-M-undefined",
+      "_id": {
+        "$oid": "67936618272490d7d5d8d308"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT03-XS-undefined",
+      "_id": {
+        "$oid": "67936618272490d7d5d8d309"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 350,
+  "offer_percentage": 0,
+  "final_price": 385,
+  "gst_percentage": 8,
+  "price_with_gst": 378,
+  "images": [
+    "Assets\\Products\\product-1737713176942.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:06:16.971Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:06:16.971Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936b40272490d7d5d8d3c0"
+  },
+  "product_id": "CAT06PAT04",
+  "name": "MensTracks Pants",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451b"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 200,
+  "color": "Blue",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT04-M-undefined",
+      "size": "M",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c1"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT04-M-undefined",
+      "size": "M",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c2"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT04-XL-undefined",
+      "size": "XL",
+      "stock": 100,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c3"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT04-M-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Slim",
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c4"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT04-M-undefined",
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c5"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT04-XL-undefined",
+      "_id": {
+        "$oid": "67936b40272490d7d5d8d3c6"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 355,
+  "offer_percentage": 0,
+  "final_price": 390.5,
+  "gst_percentage": 8,
+  "price_with_gst": 383.4,
+  "images": [
+    "Assets\\Products\\product-1737714496621.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:28:16.645Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:28:16.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936ba1272490d7d5d8d3dc"
+  },
+  "product_id": "CAT06PAT05",
+  "name": "MensShorts",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451c"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 200,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT05-XS-undefined",
+      "size": "XS",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3dd"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT05-XL-undefined",
+      "size": "XL",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3de"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT05-XXL-undefined",
+      "size": "XXL",
+      "stock": 100,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3df"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT05-XS-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3e0"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT05-XL-undefined",
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3e1"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT05-XXL-undefined",
+      "_id": {
+        "$oid": "67936ba1272490d7d5d8d3e2"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 505,
+  "selling_price": 355,
+  "offer_percentage": 0,
+  "final_price": 390.5,
+  "gst_percentage": 8,
+  "price_with_gst": 383.4,
+  "images": [
+    "Assets\\Products\\product-1737714593706.png",
+    "Assets\\Products\\product-1737714593721.jpg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:29:53.737Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:29:53.737Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936bd0272490d7d5d8d3e8"
+  },
+  "product_id": "CAT06PAT06",
+  "name": "Women Shorts",
+  "gender": "women",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451c"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 100,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT06-XS-undefined",
+      "size": "XS",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936bd0272490d7d5d8d3e9"
+      }
+    },
+    {
+      "variant_id": "CAT06PAT06-XL-undefined",
+      "size": "XL",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936bd0272490d7d5d8d3ea"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT06-XS-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936bd0272490d7d5d8d3eb"
+      }
+    },
+    {
+      "detail_id": "CAT06PAT06-XL-undefined",
+      "_id": {
+        "$oid": "67936bd0272490d7d5d8d3ec"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 505,
+  "selling_price": 355,
+  "offer_percentage": 0,
+  "final_price": 390.5,
+  "gst_percentage": 8,
+  "price_with_gst": 383.4,
+  "images": [
+    "Assets\\Products\\product-1737714640204.jpg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:30:40.215Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:30:40.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936d2a22623e1cb4fcdcc9"
+  },
+  "product_id": "CAT08PAT01",
+  "name": "Women Shoes",
+  "gender": "women",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "sub_category_id": {
+    "$oid": "67922c4497de679464cf4c13"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 100,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT08PAT01-S-undefined",
+      "size": "S",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936d2a22623e1cb4fcdcca"
+      }
+    },
+    {
+      "variant_id": "CAT08PAT01-M-undefined",
+      "size": "M",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936d2a22623e1cb4fcdccb"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT08PAT01-S-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936d2a22623e1cb4fcdccc"
+      }
+    },
+    {
+      "detail_id": "CAT08PAT01-M-undefined",
+      "_id": {
+        "$oid": "67936d2a22623e1cb4fcdccd"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 355,
+  "offer_percentage": 0,
+  "final_price": 390.5,
+  "gst_percentage": 8,
+  "price_with_gst": 383.4,
+  "images": [
+    "Assets\\Products\\product-1737714986103.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:36:26.148Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:36:26.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936d8a22623e1cb4fcdcd5"
+  },
+  "product_id": "CAT08PAT02",
+  "name": "Women Shoes",
+  "gender": "women",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "sub_category_id": {
+    "$oid": "67922c4497de679464cf4c13"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 100,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT08PAT02-S-undefined",
+      "size": "S",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936d8a22623e1cb4fcdcd6"
+      }
+    },
+    {
+      "variant_id": "CAT08PAT02-M-undefined",
+      "size": "M",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936d8a22623e1cb4fcdcd7"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT08PAT02-S-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936d8a22623e1cb4fcdcd8"
+      }
+    },
+    {
+      "detail_id": "CAT08PAT02-M-undefined",
+      "_id": {
+        "$oid": "67936d8a22623e1cb4fcdcd9"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvviassda",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 355,
+  "offer_percentage": 0,
+  "final_price": 390.5,
+  "gst_percentage": 8,
+  "price_with_gst": 383.4,
+  "images": [
+    "Assets\\Products\\product-1737715082272.png",
+    "Assets\\Products\\product-1737715082287.png",
+    "Assets\\Products\\product-1737715082291.png",
+    "Assets\\Products\\product-1737715082295.jpg",
+    "Assets\\Products\\product-1737715082299.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:38:02.314Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:38:02.314Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936df022623e1cb4fcdd0b"
+  },
+  "product_id": "CAT08PAT03",
+  "name": "Women Shoes",
+  "gender": "men",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "sub_category_id": {
+    "$oid": "67922c4497de679464cf4c13"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 142,
+  "color": "Black",
+  "variants": [
+    {
+      "variant_id": "CAT08PAT03-S-undefined",
+      "size": "S",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd0c"
+      }
+    },
+    {
+      "variant_id": "CAT08PAT03-XL-undefined",
+      "size": "XL",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd0d"
+      }
+    },
+    {
+      "variant_id": "CAT08PAT03-XXL-undefined",
+      "size": "XXL",
+      "stock": 42,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd0e"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT08PAT03-S-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd0f"
+      }
+    },
+    {
+      "detail_id": "CAT08PAT03-XL-undefined",
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd10"
+      }
+    },
+    {
+      "detail_id": "CAT08PAT03-XXL-undefined",
+      "_id": {
+        "$oid": "67936df022623e1cb4fcdd11"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "Evvi",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 500,
+  "selling_price": 450,
+  "offer_percentage": 0,
+  "final_price": 495,
+  "gst_percentage": 8,
+  "price_with_gst": 486,
+  "images": [
+    "Assets\\Products\\product-1737715184056.jpg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:39:44.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:39:44.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67936ecea36bab287c5bf58e"
+  },
+  "product_id": "CAT07PAT01",
+  "name": "Cap",
+  "gender": "men",
+  "category_id": {
+    "$oid": "6792284b97de679464cf4bd3"
+  },
+  "sub_category_id": {
+    "$oid": "6792284b97de679464cf4bd6"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 142,
+  "color": "Black",
+  "variants": [
+    {
+      "variant_id": "CAT07PAT01-S-undefined",
+      "size": "S",
+      "stock": 60,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf58f"
+      }
+    },
+    {
+      "variant_id": "CAT07PAT01-XL-undefined",
+      "size": "XL",
+      "stock": 40,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf590"
+      }
+    },
+    {
+      "variant_id": "CAT07PAT01-L-undefined",
+      "size": "L",
+      "stock": 42,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf591"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT07PAT01-S-undefined",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "NA",
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf592"
+      }
+    },
+    {
+      "detail_id": "CAT07PAT01-XL-undefined",
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf593"
+      }
+    },
+    {
+      "detail_id": "CAT07PAT01-L-undefined",
+      "_id": {
+        "$oid": "67936ecea36bab287c5bf594"
+      }
+    }
+  ],
+  "description": "Discover stylish and comfortable bottom wear for every occasion. From casual jeans to elegant trousers, find your perfect fit!",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "Evvi",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 100,
+  "selling_price": 450,
+  "offer_percentage": 0,
+  "final_price": 495,
+  "gst_percentage": 8,
+  "price_with_gst": 486,
+  "images": [
+    "Assets\\Products\\product-1737715406242.jpg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:43:26.266Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:43:26.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6793709ca36bab287c5bf5d5"
+  },
+  "product_id": "CAT012PAT01",
+  "name": "Mens Sweaters",
+  "gender": "men",
+  "category_id": {
+    "$oid": "6792355b97de679464cf4cf5"
+  },
+  "sub_category_id": {
+    "$oid": "6792355b97de679464cf4cf9"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 90,
+  "color": "white",
+  "variants": [
+    {
+      "variant_id": "CAT012PAT01-XXL-undefined",
+      "size": "XXL",
+      "stock": 56,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "6793709ca36bab287c5bf5d6"
+      }
+    },
+    {
+      "variant_id": "CAT012PAT01-M-undefined",
+      "size": "M",
+      "stock": 34,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "6793709ca36bab287c5bf5d7"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT012PAT01-XXL-undefined",
+      "material_type": "Regular",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "6793709ca36bab287c5bf5d8"
+      }
+    },
+    {
+      "detail_id": "CAT012PAT01-M-undefined",
+      "_id": {
+        "$oid": "6793709ca36bab287c5bf5d9"
+      }
+    }
+  ],
+  "description": "asdfghjkljhgfdsadfghkjlkjhgf",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "sampleEvvirrrrr",
+    "location": "Chennai",
+    "reviews": 0
+  },
+  "MRP": 750,
+  "selling_price": 550,
+  "offer_percentage": 0,
+  "final_price": 599.5,
+  "gst_percentage": 7,
+  "price_with_gst": 588.5,
+  "images": [
+    "Assets\\Products\\product-1737715868688.jpg",
+    "Assets\\Products\\product-1737715868707.jpg",
+    "Assets\\Products\\product-1737715868711.jpg",
+    "Assets\\Products\\product-1737715868715.jpg"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-24T10:51:08.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T10:51:08.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681de785274f372c14fdbe9b"
+  },
+  "product_id": "CAT06PAT07",
+  "name": "SHORTS",
+  "gender": "women",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "sub_category_id": {
+    "$oid": "67921d0e176e10eb0229451c"
+  },
+  "vendor_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "total_stock": 23,
+  "color": "White",
+  "variants": [
+    {
+      "variant_id": "CAT06PAT07-XL-undefined",
+      "size": "XL",
+      "stock": 23,
+      "is_out_of_stock": false,
+      "_id": {
+        "$oid": "681de785274f372c14fdbe9c"
+      }
+    }
+  ],
+  "product_details": [
+    {
+      "detail_id": "CAT06PAT07-XL-undefined",
+      "sleeve_details": "Slim Fit",
+      "material_type": "Cotton",
+      "pattern_type": "Plain",
+      "fit_type": "Regular",
+      "_id": {
+        "$oid": "681de785274f372c14fdbe9d"
+      }
+    }
+  ],
+  "description": "sdadasd",
+  "country_of_origin": "India",
+  "seller_details": {
+    "name": "Evvi",
+    "location": "Madurai",
+    "reviews": 0
+  },
+  "MRP": 600,
+  "selling_price": 300,
+  "offer_percentage": 0,
+  "final_price": 342,
+  "gst_percentage": 12,
+  "gst": 36,
+  "price_with_gst": 336,
+  "images": [
+    "Assets\\Products\\product-1746790277818.png",
+    "Assets\\Products\\product-1746790277827.png"
+  ],
+  "rating": 0,
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-05-09T11:31:17.964Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-09T11:31:17.964Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,280 @@
+[{
+  "_id": {
+    "$oid": "67062b0186c1e791175d51f4"
+  },
+  "name": "samplevendor",
+  "email": "samplevendor@mail.com",
+  "company_name": "samplecompany",
+  "phone_number": "123456789",
+  "hashed_password": "$2b$10$mop.vM0iDATCUgSd.U5A8OzMIT/vWybIkk990FNi9NyJ5t82Xlo9e",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "rajajipark",
+      "city": "madurai",
+      "state": "tamilnadu",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "67062b0186c1e791175d51f5"
+      }
+    }
+  ],
+  "is_approved": false,
+  "status": "inactive",
+  "bank_account": {
+    "account_holder_name": "visutha",
+    "bank_name": "State Bank of India",
+    "account_number": "123456789123",
+    "ifsc_code": "SBIN0002254",
+    "branch_name": "PASUMALAI, MADURAI",
+    "city": "MADURAI",
+    "state": "TAMIL NADU",
+    "account_type": "Current Account"
+  },
+  "createdAt": {
+    "$date": "2024-10-09T07:04:33.499Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-03T06:18:17.163Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67062e921e8d109abac7be07"
+  },
+  "name": "samplevendor01",
+  "email": "samplevendor01@mail.com",
+  "company_name": "samplecompany01",
+  "phone_number": "1234567891",
+  "hashed_password": "$2b$10$s/lsdy9zgsWUTZGJ0dNSxuvS9lZnofqdutKAY.O4cCLz79.Y87pPS",
+  "address": [
+    {
+      "flatNo": "123",
+      "area": "GandhiPark",
+      "city": "madurai",
+      "state": "tamilnadu",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "67062e921e8d109abac7be08"
+      }
+    }
+  ],
+  "is_approved": true,
+  "status": "active",
+  "bank_account": {
+    "account_holder_name": "samplevendor",
+    "bank_name": "State Bank of India",
+    "account_number": "123456789123",
+    "ifsc_code": "SBIN0002254",
+    "branch_name": "PASUMALAI, MADURAI",
+    "city": "MADURAI",
+    "state": "TAMIL NADU",
+    "account_type": "current"
+  },
+  "createdAt": {
+    "$date": "2024-10-09T07:19:46.308Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T10:16:22.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706690f38a9a1ae66c97c07"
+  },
+  "name": "samplevendor02",
+  "email": "samplevendor02@mail.com",
+  "company_name": "samplevendor02",
+  "phone_number": "123456",
+  "role": "vendor",
+  "hashed_password": "$2b$10$USF2WwUrgl5huTr2cEQjNe.Bnu9KRI1RVUndNX6L4F7iYe9Qrshh6",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "pasumalai",
+      "city": "madurai",
+      "state": "tamilnadu",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "6706690f38a9a1ae66c97c08"
+      }
+    }
+  ],
+  "is_approved": true,
+  "status": "active",
+  "createdAt": {
+    "$date": "2024-10-09T11:29:19.846Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T06:36:02.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67470c213a4fc04da3ef9807"
+  },
+  "name": "Fazil",
+  "email": "fazil@mail.com",
+  "company_name": "FazilEvvi",
+  "phone_number": "9876543210",
+  "role": "vendor",
+  "hashed_password": "$2b$10$nY/Er4jstRymUG1/ZgW.ZevMh8G2ev795uwJbyjM5ubpFILw4tHyS",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "Thiruparagkundram",
+      "city": "MADURAI",
+      "state": "TAMIL NADU",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "67470c213a4fc04da3ef9808"
+      }
+    }
+  ],
+  "is_approved": false,
+  "status": "active",
+  "createdAt": {
+    "$date": "2024-11-27T12:10:09.878Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T06:38:12.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cedf9eabeb1d41391b844a"
+  },
+  "name": "Ishwarya",
+  "email": "ishwarya@gmail.com",
+  "company_name": "Ishu@CO",
+  "phone_number": "9876543214",
+  "role": "vendor",
+  "hashed_password": "$2b$10$j1e3CuodeXsbynSos9RDzOwD5Em43bZIIIK8BjZZQ4jW.1UBXsXoC",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "Bykara",
+      "city": "MADURAI",
+      "state": "Tamil Nadu",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "67cedf9eabeb1d41391b844b"
+      }
+    }
+  ],
+  "is_approved": true,
+  "status": "inactive",
+  "createdAt": {
+    "$date": "2025-03-10T12:48:30.876Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-03T09:12:24.287Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6815b70e6304ec0c94da450f"
+  },
+  "name": "SankarVendor",
+  "email": "sankar@evvisolutions.com",
+  "company_name": "SAnkarVandor",
+  "phone_number": "9632587415",
+  "role": "vendor",
+  "hashed_password": "$2b$10$sSsp7sMu28/5RRDi3OoFg.//gBaITy0HB58k06RwhbW6BkfZV7Ks.",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "Moota Colony",
+      "city": "MADURAI",
+      "state": "Tamil Nadu",
+      "pincode": "625004",
+      "_id": {
+        "$oid": "6815b70e6304ec0c94da4510"
+      }
+    }
+  ],
+  "is_approved": false,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-05-03T06:26:22.174Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T09:51:03.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682491f311ac324f481b7fd2"
+  },
+  "name": "VISUTHA R",
+  "email": "rvisutha1@gmail.com",
+  "company_name": "Visutha",
+  "phone_number": "07598282332",
+  "role": "vendor",
+  "hashed_password": "$2b$10$KL0NbIqSTHUu6ASuf.tXaePxuS/m6Ikvqhw285g19G.MGfZOgsaNq",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "147",
+      "area": "pasumalai",
+      "city": "MADURAI",
+      "state": "Tamil Nadu",
+      "pincode": "652114",
+      "_id": {
+        "$oid": "682491f311ac324f481b7fd3"
+      }
+    }
+  ],
+  "is_approved": false,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-05-14T12:52:03.413Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T12:52:03.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824929311ac324f481b7fd8"
+  },
+  "name": "Vinoth",
+  "email": "vinothone@mail.com",
+  "company_name": "Vinoth",
+  "phone_number": "9632587412",
+  "role": "vendor",
+  "hashed_password": "$2b$10$FYsMf/UZ.RYL1T5hwhraNea/ToePMHCOT5UVpNpphjKYKWJtKQ3N2",
+  "gstin": "",
+  "address": [
+    {
+      "flatNo": "26/3a,VOCNagar",
+      "area": "Moota Colony",
+      "city": "MADURAI",
+      "state": "Tamil Nadu",
+      "pincode": "625414",
+      "_id": {
+        "$oid": "6824929311ac324f481b7fd9"
+      }
+    }
+  ],
+  "is_approved": false,
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-05-14T12:54:43.962Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T12:54:43.962Z"
+  },
+  "__v": 0
+}]

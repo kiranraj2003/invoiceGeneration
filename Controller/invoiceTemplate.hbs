@@ -1,0 +1,337 @@
+{{!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Invoice {{invoice_number}}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    h1 { text-align: center; }
+    h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background-color: #f5f5f5; }
+    .summary { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Invoice</h1>
+  <p><strong>Invoice Number:</strong> {{invoice_number}}</p>
+  <p><strong>User:</strong> {{user}}</p>
+  <p><strong>Store:</strong> {{store}}</p>
+
+  {{#each vendors}}
+    <h2>Vendor {{@indexPlusOne}}: {{vendor_id}}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product ID</th><th>Quantity</th><th>Price (₹)</th><th>Total Price (₹)</th><th>GST %</th><th>GST Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each products}}
+          <tr>
+
+            <td>{{product_id}}</td>
+            <td>{{quantity}}</td>
+            <td>{{price}}</td>
+            <td>{{total_price}}</td>
+            <td>{{gst_percentage}}</td>
+            <td>{{gst_amount}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <p><strong>Vendor Total:</strong> ₹{{vendor_total}}</p>
+    <p><strong>Vendor GST:</strong> ₹{{vendor_gst}}</p>
+  {{/each}}
+
+  <h2>Summary</h2>
+  <p><strong>Total Price:</strong> ₹{{total_price}}</p>
+  <p><strong>Discount:</strong> ₹{{discount}}</p>
+  <p><strong>GST Total:</strong> ₹{{gst_total}}</p>
+  <p><strong>Final Price:</strong> ₹{{final_price}}</p>
+  <p><strong>Payment Status:</strong> {{payment_status}}</p>
+
+
+  <img src="{{qrCodeURL}}" alt="" style="width: 100px; height: 100px; margin-top: 20px;" />
+</body>
+</html> --}}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Invoice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      width: 48%;
+    }
+
+    .flex-container-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .qr-container {
+      text-align: end;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .qr-box {
+      width: 380px;
+      height: auto;
+      border: 1px solid black;
+      margin-top: 10px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .thin-divider {
+      background-color: rgb(142, 134, 134);
+      width: 1.5px;
+      margin-right: 15px;      
+    }
+
+    .billing-address {
+      width: 35%;
+      margin-left: 5px;
+    }
+
+    .vendor-details {
+      width: 45%;
+    }
+
+    .invoice-detail {
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      bottom: 5px;
+      left: 40px;
+      right: 40px;
+      font-size: 0.9em;
+      border-top: 1px solid #ccc;
+      padding-top: 3px;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 20px;
+      padding-right: 10px;
+    }
+
+    .bold {
+      font-weight: bold;
+      text-align: end;
+    }
+
+    .terms {
+      width: 350px;
+    }
+
+    .auth-sign {
+      text-align: end;
+    }
+
+    .company-stamp {
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+
+      <h2>Tax Invoice</h2>
+
+      <div class="section flex-container">
+        <div class="flex-item">
+          <div class="section">
+            <p><strong>Order Details</strong></p>
+            <p class="invoice-detail"><strong>Order ID:</strong> {{parentOrderId}}</p>
+            <p class="invoice-detail"><strong>Order Date:</strong>{{createdAt}} </p>
+            <p class="invoice-detail"><strong>Invoice Date:</strong> {{createdAt}} </p>
+            <p class="invoice-detail"><strong>Invoice Number:</strong> {{invoice_number}}</p>
+            <p class="invoice-detail"><strong>PAN:</strong> AATCA0996P</p>
+            <p class="invoice-detail"><strong>CIN:</strong> U52510DL2019PTC359329</p>
+          </div>
+        </div>
+
+        <div class="flex-item qr-container">
+          <img src="{{qrCodeURL}}" alt="QrCode" width="125" height="125">
+          <div class="qr-box">
+            invoice number: <strong>{{invoice_number}}</strong>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section flex-container">
+        <div class="vendor-details">
+          <p><strong>Vendor Details</strong><br>
+            <strong>Sold By:</strong>{{vendorDetails.name}} <br>
+            <strong>Ship-from Address:</strong> {{vendorDetails.company_name}},<br>
+           {{vendorDetails.address.flatNo}},{{vendorDetails.address.area}}<br>
+            {{vendorDetails.address.city}}, {{vendorDetails.address.state}},<br>
+            {{vendorDetails.address.pincode}}<br>
+            {{!-- GSTIN: 33AATCA0996P1ZU<br>
+            IRN: 5ebc589017353a808c6c8f18 --}}
+          </p>
+        </div>
+
+        <div class="thin-divider"></div>
+
+        <div class="billing-address">
+          <p><strong>Billing Address</strong><br>
+            {{userDetails.name}}<br>
+           {{userAddress.street}},{{userAddress.area}}<br>
+            {{userAddress.city}},{{userAddress.state}}<br>
+            {{userAddress.country}}<br>
+            Phone: {{userDetails.phone}}<br>
+            Email: {{userDetails.email}}<br>
+          </p>
+        </div>
+      </div>
+
+
+{{#each vendors}}
+      <table>
+          {{#each products}}
+        <thead>
+          <tr>
+        
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Gross Amount ₹</th>
+
+            <th>Discounts / Coupons ₹</th>
+            {{!-- <th>SGST / UTGST ₹</th> --}}
+            <th>CGST({{cgst_percent}} %) ₹</th>
+            <th>SGST({{sgst_percent}} %) ₹</th>
+            <th>Total ₹</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+     
+            <td>{{product_name}}</td>
+            <td>{{quantity}}</td>
+          <td>{{price}}</td>
+              <td>{{discount}}0</td>
+     
+         
+          {{!-- <td>{{gst_percentage}}</td>
+          <td>{{gst_amount}}</td> --}}
+          <td>{{cgst}}</td>
+          <td>{{sgst}}</td>
+          <td>{{total_price}}</td>
+          </tr>
+        </tbody>
+        {{/each}}
+      </table>
+{{/each}}      
+
+
+
+<div class="section signature">
+        <h3 class="bold">Total Gst ₹ : {{gst_total}}</h3>
+      </div>
+
+      <div class="section signature">
+        <h3 class="bold">Grand Total ₹ :{{final_price}}</h3>
+      </div>
+
+      <div class="section flex-container-1">
+        <div>
+          <p><strong>Payment Details</strong></p>
+          <p>
+            <strong>Payment Method :</strong> {{paymentMethod}}<br>
+            <strong>Payment Status :</strong> {{paymentStatus}}<br>
+            <strong>Payment Date :</strong> {{createdAt}}
+          </p>
+          {{!-- <p><strong>Terms & Conditions</strong></p>
+          <p class="terms">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolore.</p> --}}
+        </div>
+        <div class="auth-sign">
+          <p><strong>AARNA VENTURES PRIVATE LIMITED</strong><br>
+            {{!-- <img src="{{company_stamp_base64}}" alt="" class="company-stamp"><br> --}}
+            Authorized Signatory
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>Contact evviKart: 044 - 66904500 | <a href="">www.evviKart.com/helpcentre</a></p>
+      <p>2024-10-03T22:18:24+0530 | Coimbatore, IN-TN</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
