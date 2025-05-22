@@ -6,7 +6,6 @@ import { addressModel } from "../Model/Address_schema.js";
 import { productModel } from "../Model/Product_schema.js";
 import mongoose from "mongoose";
 import handlebars from "handlebars";
-// import pdf from "html-pdf";
 import puppeteer from "puppeteer";
 import QRCode from "qrcode";
 import fs from "fs";
@@ -20,30 +19,31 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = "http://localhost:5000/api"; // Replace with your domain or url
 
-const savePdfToFile = async (html, filePath) => {
-  // Launch headless Chrome
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+// save pdf files in invoice output folder
+// const savePdfToFile = async (html, filePath) => {
+//   // Launch headless Chrome
+//   const browser = await puppeteer.launch();
+//   const page = await browser.newPage();
 
-  // Set the HTML content
-  await page.setContent(html, { waitUntil: "networkidle0" });
+//   // Set the HTML content
+//   await page.setContent(html, { waitUntil: "networkidle0" });
 
-  // Generate PDF and save to filePath
-  await page.pdf({
-    path: filePath,
-    format: "A4",
-    margin: {
-      top: "10mm",
-      right: "10mm",
-      bottom: "10mm",
-      left: "10mm",
-    },
-    scale: 0.7,
-    printBackground: true, // important to keep background colors and images
-  });
+//   // Generate PDF and save to filePath
+//   await page.pdf({
+//     path: filePath,
+//     format: "A4",
+//     margin: {
+//       top: "10mm",
+//       right: "10mm",
+//       bottom: "10mm",
+//       left: "10mm",
+//     },
+//     scale: 0.7,
+//     printBackground: true, // important to keep background colors and images
+//   });
 
-  await browser.close();
-};
+//   await browser.close();
+// };
 
 
 
@@ -513,8 +513,11 @@ const savePdfToFile = async (html, filePath) => {
 
 export const createInvoice = async (req, res) => {
   try {
-    const parentOrderId = req.body.parentOrderId.$oid;
-
+    let parentOrderIdRaw = req.body.parentOrderId;
+    const parentOrderId =
+      typeof parentOrderIdRaw === "string"
+        ? parentOrderIdRaw
+        : parentOrderIdRaw?.$oid;
     // 🚀 Improved validation with logs
     console.log("📌 Extracted parentOrderId:", parentOrderId);
     console.log("📌 Type of parentOrderId:", typeof parentOrderId);
@@ -630,7 +633,7 @@ export const createInvoice = async (req, res) => {
     const invoiceUrl = `${BASE_URL}/invoices/download/${invoiceNumber}`;
     const qrCodeURL = await QRCode.toDataURL(invoiceUrl);
 
-    
+
     const formatDateManually = (date) => {
       const d = new Date(date);
       return `${String(d.getDate()).padStart(2, "0")}-${String(
@@ -641,6 +644,7 @@ export const createInvoice = async (req, res) => {
     const vendorDetails = Array.from(vendorMap.values())[0];
     const vendorFull = await vendorModel.findById(vendorDetails.vendor_id);
 
+    //hbs template
     const templatePath = path.join(__dirname, "invoiceTemplate.hbs");
     const templateHtml = fs.readFileSync(templatePath, "utf8");
     const template = handlebars.compile(templateHtml);
@@ -697,14 +701,14 @@ export const createInvoice = async (req, res) => {
       fs.mkdirSync(outputFolder);
     }
 
-    const fileName = `${invoiceNumber}-${
-      new Date()
-        .toISOString()
-        .replace(/:/g, "-")
-        .replace("T", "_")
-        .split(".")[0]
-    }.pdf`;
-    const filePath = path.join(outputFolder, fileName);
+    // const fileName = `${invoiceNumber}-${
+    //   new Date()
+    //     .toISOString()
+    //     .replace(/:/g, "-")
+    //     .replace("T", "_")
+    //     .split(".")[0]
+    // }.pdf`;
+    // const filePath = path.join(outputFolder, fileName);
 
     const pdfBuffer = await (async () => {
       const browser = await puppeteer.launch({
@@ -736,7 +740,7 @@ export const createInvoice = async (req, res) => {
         data: pdfBuffer,
         contentType: "application/pdf",
       },
-      pdfPath: filePath,
+      // pdfPath: filePath,
     });
 
     await finalInvoice.save();
@@ -753,7 +757,7 @@ export const createInvoice = async (req, res) => {
 };
 
 
-//get invoice by object id // completed
+//get invoice by object id    // completed
 export const getInvoiceById = async (req, res) => {
   try {
     const id = req.params.id.trim(); // trim whitespace and newlines

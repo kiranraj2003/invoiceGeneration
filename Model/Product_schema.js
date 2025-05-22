@@ -36,6 +36,11 @@ const productSchema = new mongoose.Schema(
       required: true, // Total stock across all variants
       min: 0, // Must be non-negative
     },
+    stock_status: {
+      type: String,
+      // enum: ["Low on Stock", "Available", "Out of Stock"],  
+      default:"Available"  //changes when the stock is below 20
+    },
     color: {
       type: String,
       required: true, // Color attribute for the variant
@@ -168,6 +173,7 @@ const productSchema = new mongoose.Schema(
       type: Boolean,
       default: false, // Track if the product is deleted
     },
+   
   },
   { timestamps: true } // Automatically manage createdAt and updatedAt
 );

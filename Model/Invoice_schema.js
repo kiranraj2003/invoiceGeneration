@@ -83,7 +83,7 @@ const invoiceSchema = new mongoose.Schema(
       data: Buffer,
       contentType: String,
     },
-    pdfPath: { type: String, required: true },
+    // pdfPath: { type: String, required: true },
     qrCodeURL: {
       type: String,
       required: false,

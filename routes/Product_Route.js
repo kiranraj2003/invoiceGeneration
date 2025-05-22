@@ -7,5 +7,7 @@ const ProductRoute = express.Router();
 
 ProductRoute.post('/createproduct', Product.createProduct);
 
+ProductRoute.get('/stockreport',Product.stockReportDownload)
+
 
 export default ProductRoute;

@@ -3,6 +3,14 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 
+import { fileURLToPath } from "url";
+import handlebars from "handlebars";
+import puppeteer from "puppeteer";
+// for path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
 import { productModel } from "../Model/Product_schema.js";
 // import { categoryModel } from "../Model/Categories_schema.js";
 // import { WishlistModel } from "../Model/Wishlist_schema.js";
@@ -1671,3 +1679,132 @@ export const latestProducts = async (req, res) => {
   }
 
 }
+
+
+// export const stockReportDownload = async (req, res) => {
+//   try {
+//     const report = await productModel.find({})
+
+//     const templatePath = path.join(__dirname, 'views', 'stockTemplate.hbs')
+//     const templateHtml = fs.readFileSync(templatePath,'utf-8')
+//     const template = handlebars.compile(templateHtml)
+
+//     const html = template({ report })
+    
+//     const pdfBuffer = await (async () => {
+//       const browser = await puppeteer.launch({
+//         args: ["--no-sandbox","--disable-set-uid-sandbox"]
+//       })
+
+//       const page = await browser.newPage();
+//       await page.setContent(html, { waitUntil: "networkidle0" })
+
+//       const pdfUint8Array = await page.pdf({
+//         format: 'A4',
+//         printBackground: true,
+//         margin: { top: '10mm', bottom: '10mm', left: '10mm', right: '10mm' },
+//         scale:0.7
+//       })
+
+//       await browser.close()
+//       return Buffer.from(pdfUint8Array)
+
+//     })()
+
+//     const stockModel = new productModel({
+//       pdf: {
+//         data: pdfBuffer,
+//         contentType: "application/pdf",
+//       }
+//     });
+//     await stockModel.save()
+    
+//     res.set({
+//       "Content-Type": "application/pdf",
+//       "Content-Disposition": 'attachment; filename="stock_report.pdf"',
+//       "Content-Length": pdfBuffer.length,
+//     });
+
+
+//     // res.status(200).json({pdfBuffer, message: "Stock report has been download" });
+//     res.send(pdfBuffer)
+//   } catch (err) {
+//     console.error("Error Downloading Stock Report")
+//     res.status(500).json({ message: "Error Downloading Stock Report" });
+//   }
+// }
+
+
+export const stockReportDownload = async (req, res) => {
+  try {
+    //use lean() for displaying plain json data
+    const report = await productModel.find({}).lean(); // Get all products
+
+    
+    const updatedReport = await Promise.all(
+      report.map(async (product) => {
+        let stock_status = "Available";
+        if (product.total_stock <= 0) {
+          stock_status = "Out of Stock";
+        } else if (product.total_stock < 20) {
+          stock_status = "Low on Stock";
+        }
+
+        
+        await productModel.findByIdAndUpdate(product._id, { stock_status });
+
+        // Return updated product for rendering
+        return { ...product, stock_status };
+      })
+    );
+
+    // template
+    const templatePath = path.join(
+      __dirname,
+      "..",
+      "views",
+      "stockTemplate.hbs"
+    );
+    const templateHtml = fs.readFileSync(templatePath, "utf-8");
+    const template = handlebars.compile(templateHtml);
+
+    const html = template({ report: updatedReport });
+
+    const browser = await puppeteer.launch({
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
+
+    const page = await browser.newPage();
+    await page.setContent(html, { waitUntil: "networkidle0" });
+
+    const pdfBuffer = await page.pdf({
+      format: "A4",
+      printBackground: true,
+      margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
+      scale: 0.7,
+    });
+    await browser.close();
+
+    const formatDateManually = (date) => {
+      const d = new Date(date);
+      return `${String(d.getDate()).padStart(2, "0")}-${String(
+        d.getMonth() + 1
+      ).padStart(2, "0")}-${d.getFullYear()}`;
+    };
+
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename="stock_report_${formatDateManually(
+        Date.now()
+      )}.pdf"`
+    );
+    return res.send(pdfBuffer);
+  } catch (err) {
+    console.error("Error Downloading Stock Report", err);
+    if (!res.headersSent) {
+      res.status(500).json({ message: "Error Downloading Stock Report" });
+    }
+  }
+};
+
