@@ -87,5 +87,6 @@ import * as Vendor from "../Controller/Vendor_Controller.js";
 const VendorRoute = express.Router();
 
 VendorRoute.post("/registerVendor", Vendor.registerVendor);
-
+VendorRoute.get("/onlinereport/:id",Vendor.onlineStockReport)
+VendorRoute.get("/offlinereport/:id", Vendor.offlineStockReport);
 export default VendorRoute;

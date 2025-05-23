@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table,
+      th,
+      td {
+        border-collapse:collapse;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      th{
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+      table{
+        margin:auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+<h1>{{heading}}</h1>
+    {{!-- {{products}} --}}
+    <table>
+      <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category Name</th>
+           <th>Sub Category Name</th> 
+            <th>Gender</th>
+            <th>Color</th>
+            <th>Variants</th>
+         
+            </tr>
+      </thead>
+
+      <tbody>
+        {{#each products}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{category.name}}</td>
+            <td>{{subcategory.name}}</td>   
+            <td>{{gender}}</td>
+            <td>{{color}}</td>
+            <td>
+            {{#each variants}}
+             {{size}} - {{stock}}- {{stock_status}}<br>
+            {{/each}}
+              </td>
+          </tr>
+        {{/each}}
+
+      </tbody>
+    </table>
+  </body>
+</html>

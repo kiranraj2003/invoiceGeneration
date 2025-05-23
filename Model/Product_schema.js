@@ -36,11 +36,7 @@ const productSchema = new mongoose.Schema(
       required: true, // Total stock across all variants
       min: 0, // Must be non-negative
     },
-    stock_status: {
-      type: String,
-      // enum: ["Low on Stock", "Available", "Out of Stock"],  
-      default:"Available"  //changes when the stock is below 20
-    },
+
     color: {
       type: String,
       required: true, // Color attribute for the variant
@@ -64,13 +60,18 @@ const productSchema = new mongoose.Schema(
           type: Boolean,
           default: false, // Track if the variant is out of stock
         },
+        stock_status: {
+          type: String,
+          // enum: ["Low on Stock", "Available", "Out of Stock"],
+          default: "Available", //changes when the stock is below 20
+        },
       },
     ],
     product_details: [
       {
         detail_id: {
           type: String,
-          required:false, // Unique identifier for each detail set
+          required: false, // Unique identifier for each detail set
         },
         sleeve_details: {
           type: String,
@@ -135,7 +136,7 @@ const productSchema = new mongoose.Schema(
     offer_percentage: {
       type: Number,
       default: 0, // Discount percentage
-        },
+    },
     final_price: {
       type: Number,
       required: true, // Final price after applying the offer
@@ -147,7 +148,7 @@ const productSchema = new mongoose.Schema(
       min: 0, // Must be non-negative
       max: 100, // Should not exceed 100
     },
-    gst:{
+    gst: {
       type: Number,
       required: true, // GST amount
       min: 0, // Must be non-negative
@@ -173,7 +174,6 @@ const productSchema = new mongoose.Schema(
       type: Boolean,
       default: false, // Track if the product is deleted
     },
-   
   },
   { timestamps: true } // Automatically manage createdAt and updatedAt
 );

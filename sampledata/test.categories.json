@@ -1,0 +1,153 @@
+[{
+  "_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "name": "T-shirts",
+  "image": "Assets\\Categories\\1727246692661_IMG-20240923-WA0022.jpg",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2024-09-25T06:44:52.727Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T06:44:52.743Z"
+  },
+  "cat_no": 5,
+  "__v": 0,
+  "storeType": "online"
+},
+{
+  "_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "name": "Bottoms",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1740733920964_vecteezy_young-man-dancing_12500938.jpg",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-23T10:42:22.797Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T10:42:22.804Z"
+  },
+  "cat_no": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792284b97de679464cf4bd3"
+  },
+  "name": "Accessories",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1737631819124_front.jpg",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-23T11:30:19.148Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:30:19.155Z"
+  },
+  "cat_no": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "name": "Footwear",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1740734375394_download (1).jpg",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-01-23T11:47:16.744Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:47:16.747Z"
+  },
+  "cat_no": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922ed297de679464cf4c3c"
+  },
+  "name": "Winter Wear",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1737633490662_IMG-20240923-WA0022.jpg",
+  "is_deleted": true,
+  "createdAt": {
+    "$date": "2025-01-23T11:58:10.725Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:58:10.727Z"
+  },
+  "cat_no": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792300997de679464cf4c57"
+  },
+  "name": "Winter wear",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1737633801772_IMG-20240923-WA0029.jpg",
+  "is_deleted": true,
+  "createdAt": {
+    "$date": "2025-01-23T12:03:21.829Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:03:21.832Z"
+  },
+  "cat_no": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679230fa97de679464cf4c74"
+  },
+  "name": "Summer Wear one",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1737634042537_cotton-v-neck-t-shirt.jpeg",
+  "is_deleted": true,
+  "createdAt": {
+    "$date": "2025-01-23T12:07:22.546Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:07:22.549Z"
+  },
+  "cat_no": 11,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792355b97de679464cf4cf5"
+  },
+  "name": "Wear",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1737635162244_purple.png",
+  "is_deleted": true,
+  "createdAt": {
+    "$date": "2025-01-23T12:26:03.208Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:26:03.212Z"
+  },
+  "cat_no": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682333ad63c01e22bad0d7c1"
+  },
+  "name": "Shirt",
+  "storeType": "online",
+  "image": "Assets\\Categories\\1747137453752_vecteezy_ai-generated-short-sleeves-yellow-polo-t-shirt-isolated-on_35440320.png",
+  "is_deleted": false,
+  "createdAt": {
+    "$date": "2025-05-13T11:57:33.873Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T11:57:33.914Z"
+  },
+  "cat_no": 13,
+  "__v": 0
+}]

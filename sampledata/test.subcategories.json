@@ -1,0 +1,432 @@
+[{
+  "_id": {
+    "$oid": "679211fa40d5248161b5d0b4"
+  },
+  "name": "Polo",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T09:55:06.143Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T09:55:06.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679211fa40d5248161b5d0b3"
+  },
+  "name": "Round Neck",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T09:55:06.142Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T09:55:06.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679211fa40d5248161b5d0b6"
+  },
+  "name": "V-Neck",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T09:55:06.144Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T09:55:06.144Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679211fa40d5248161b5d0b7"
+  },
+  "name": "Hoody",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T09:55:06.144Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T09:55:06.144Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67921d0e176e10eb0229451a"
+  },
+  "name": "Toursers",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67921d0e176e10eb0229451b"
+  },
+  "name": "Track Pant",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67921d0e176e10eb0229451c"
+  },
+  "name": "Shorts",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T10:42:22.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792284b97de679464cf4bd6"
+  },
+  "name": "Caps",
+  "category_id": {
+    "$oid": "6792284b97de679464cf4bd3"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792284b97de679464cf4bd7"
+  },
+  "name": "Watches",
+  "category_id": {
+    "$oid": "6792284b97de679464cf4bd3"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792284b97de679464cf4bd8"
+  },
+  "name": "Belts",
+  "category_id": {
+    "$oid": "6792284b97de679464cf4bd3"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:30:19.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922c4497de679464cf4c13"
+  },
+  "name": "Shoes",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:47:16.751Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:47:16.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922c4497de679464cf4c14"
+  },
+  "name": "Sandals",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:47:16.751Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:47:16.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922ed297de679464cf4c3f"
+  },
+  "name": "Coats",
+  "category_id": {
+    "$oid": "67922ed297de679464cf4c3c"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922ed297de679464cf4c40"
+  },
+  "name": "Sweaters",
+  "category_id": {
+    "$oid": "67922ed297de679464cf4c3c"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67922ed297de679464cf4c41"
+  },
+  "name": "Hoodies",
+  "category_id": {
+    "$oid": "67922ed297de679464cf4c3c"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T11:58:10.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792300997de679464cf4c5a"
+  },
+  "name": "Boots",
+  "category_id": {
+    "$oid": "6792300997de679464cf4c57"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:03:21.835Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:03:21.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792300997de679464cf4c5b"
+  },
+  "name": "Sweaters",
+  "category_id": {
+    "$oid": "6792300997de679464cf4c57"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:03:21.836Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:03:21.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792300997de679464cf4c5c"
+  },
+  "name": "Hoodies",
+  "category_id": {
+    "$oid": "6792300997de679464cf4c57"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:03:21.836Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:03:21.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679230fa97de679464cf4c77"
+  },
+  "name": "Tank Top",
+  "category_id": {
+    "$oid": "679230fa97de679464cf4c74"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:07:22.552Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:07:22.552Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679230fa97de679464cf4c78"
+  },
+  "name": "T-Shirt",
+  "category_id": {
+    "$oid": "679230fa97de679464cf4c74"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:07:22.553Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:07:22.553Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792355b97de679464cf4cf8"
+  },
+  "name": "Caps",
+  "category_id": {
+    "$oid": "6792355b97de679464cf4cf5"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:26:03.217Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:26:03.217Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792355b97de679464cf4cf9"
+  },
+  "name": "Sweaters",
+  "category_id": {
+    "$oid": "6792355b97de679464cf4cf5"
+  },
+  "createdAt": {
+    "$date": "2025-01-23T12:26:03.217Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-23T12:26:03.217Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c17fa7388cd8a7878dfc2d"
+  },
+  "name": "Flats",
+  "category_id": {
+    "$oid": "67922c4497de679464cf4c10"
+  },
+  "createdAt": {
+    "$date": "2025-02-28T09:19:35.543Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T09:19:35.543Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681b31f8bf2d480590f66a67"
+  },
+  "name": "Full Sleeveeee",
+  "category_id": {
+    "$oid": "66f3b16402a2732dc25ac5d7"
+  },
+  "createdAt": {
+    "$date": "2025-05-07T10:12:08.721Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-07T10:12:08.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681c7da59f82d33b6cfc6512"
+  },
+  "name": "asdf",
+  "category_id": {
+    "$oid": "67921d0e176e10eb02294517"
+  },
+  "createdAt": {
+    "$date": "2025-05-08T09:47:17.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T09:47:17.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682333ad63c01e22bad0d7c4"
+  },
+  "name": "Plain",
+  "category_id": {
+    "$oid": "682333ad63c01e22bad0d7c1"
+  },
+  "createdAt": {
+    "$date": "2025-05-13T11:57:33.942Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T11:57:33.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682333ad63c01e22bad0d7c5"
+  },
+  "name": "Printed",
+  "category_id": {
+    "$oid": "682333ad63c01e22bad0d7c1"
+  },
+  "createdAt": {
+    "$date": "2025-05-13T11:57:33.944Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T11:57:33.944Z"
+  },
+  "__v": 0
+}]

@@ -345,7 +345,7 @@
 //       return res
 //         .status(200)
 //         .json({ status: true, message: "Vendor Approved Successfully" });
-      
+
 //     } catch (err) {
 //       return res
 //         .status(500)
@@ -357,7 +357,6 @@
 //       .json({ status: false, message: "Unauthorized access" });
 //   }
 // };
-
 
 // export const countProductByVendor = async (req, res) => {
 //   if (req.user.role == "admin") {
@@ -467,7 +466,6 @@
 // //   };
 // // };
 
-
 // const vendorBankDetails = (bank_account) => {
 //   // Handle both array and object formats
 //   const account =
@@ -568,7 +566,6 @@
 //   }
 // };
 
-
 // export const vendor_dashboard = async (req, res) => {
 //   try {
 //     const vendorId = req.user.id; // Assuming vendor authentication provides `req.user`
@@ -612,14 +609,24 @@
 //   }
 // };
 
-
-
 import { vendorModel } from "../Model/Vendor_schema.js";
 // import { bankAccountModel } from "../Model/BankAccount_schema.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { productModel } from "../Model/Product_schema.js";
 import { orderModel } from "../Model/Order_schema.js";
+
+//new code for report
+import { categoryModel } from "../Model/Categories_schema.js";
+import mongoose from "mongoose";
+import { fileURLToPath } from "url";
+import handlebars from "handlebars";
+import puppeteer from "puppeteer";
+import path from "path";
+import fs from "fs";
+// for path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export const authMiddleware = (req, res, next) => {
   const token = req?.headers["authorization"]
@@ -740,7 +747,10 @@ export const registerVendor = async (req, res) => {
     const savedVendor = await newVendor.save();
 
     // 5. Create and save bank account using vendor ID
-    const formattedBankDetails = vendorBankDetails([bankDetails], savedVendor._id);
+    const formattedBankDetails = vendorBankDetails(
+      [bankDetails],
+      savedVendor._id
+    );
     const bankAccountDoc = await bankAccountModel.create(formattedBankDetails);
 
     // 6. Update vendor with bank account reference
@@ -1032,11 +1042,12 @@ export const approveVendor = async (req, res) => {
       return res
         .status(200)
         .json({ status: true, message: "Vendor Approved Successfully" });
-      
     } catch (err) {
-      return res
-        .status(500)
-        .json({ status: false, message: "Internal Server Error", error: err.message });
+      return res.status(500).json({
+        status: false,
+        message: "Internal Server Error",
+        error: err.message,
+      });
     }
   } else {
     return res
@@ -1044,7 +1055,6 @@ export const approveVendor = async (req, res) => {
       .json({ status: false, message: "Unauthorized access" });
   }
 };
-
 
 export const countProductByVendor = async (req, res) => {
   if (req.user.role == "admin") {
@@ -1184,8 +1194,8 @@ export const getAllProducts = async (req, res) => {
     const products = await productModel
       .find({ vendor_id: req.user.id })
       .populate("category_id", "name")
-      .populate("sub_category_id","name")
-      .populate("vendor_id","name email") // Populate the category name from Category model
+      .populate("sub_category_id", "name")
+      .populate("vendor_id", "name email") // Populate the category name from Category model
       .exec();
 
     return res
@@ -1198,16 +1208,15 @@ export const getAllProducts = async (req, res) => {
   }
 };
 
-
 export const vendor_dashboard = async (req, res) => {
   try {
     const vendorId = req.user.id; // Assuming vendor authentication provides `req.user`
     console.log(vendorId);
     // Count total products added by the vendor
     const productCount = await productModel.countDocuments({
-      vendor_id: vendorId
+      vendor_id: vendorId,
     });
-    console.log(productCount);  
+    console.log(productCount);
     // Count orders containing products added by the vendor
     const orderCount = await orderModel.countDocuments({
       "items.vendor_id": vendorId,
@@ -1239,5 +1248,294 @@ export const vendor_dashboard = async (req, res) => {
     return res
       .status(500)
       .json({ status: false, message: "Internal server error", error });
+  }
+};
+
+// export const onlineStockReport = async (req, res) => {
+//   const vendorId = req.params.id;
+//   // console.log("Vendor ID:", vendorId);
+
+//   if (!vendorId) {
+//     return res.status(400).json({ message: "Vendor ID is required" });
+//   }
+
+//   try {
+//     // const products = await productModel.find({ vendor_id: vendorId }).lean()
+
+//     // const storeType = await categoryModel.find({ storeType:'online' })
+//     // console.log(storeType)
+//     const products = await productModel.aggregate([
+//       {
+//         $match: {
+//           vendor_id: new mongoose.Types.ObjectId(vendorId),
+//         },
+//       },
+//       {
+//         $lookup: {
+//           from: "categories", // <-- Ensure this matches your collection name
+//           localField: "category_id",
+//           foreignField: "_id",
+//           as: "category",
+//         },
+//       },
+//       {
+//         $unwind: "$category",
+//       },
+//       {
+//         $match: {
+//           "category.storeType": "offline",
+//         },
+//       },
+//     ]);
+//     console.log(products);
+
+//     // for pdf report generation
+//     const templatePath = path.join(
+//       __dirname,
+//       "..",
+//       "views",
+//       "onlineReport.hbs"
+//     );
+//     const templateHtml = fs.readFileSync(templatePath, "utf-8");
+//     const template = handlebars.compile(templateHtml);
+
+//     const html = template({
+//       products: products.map((product) => ({ ...product })),
+//     });
+
+//     const pdfBuffer = await (async () => {
+//       const browser = await puppeteer.launch({
+//         args: ["--no-sandbox", "--disable-set-uid-sandbox"],
+//       });
+
+//       const page = await browser.newPage();
+//       await page.setContent(html, { waitUntil: "networkidle0" });
+
+//       const pdfUint8Array = await page.pdf({
+//         format: "A4",
+//         printBackground: true,
+//         margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
+//         scale: 0.7,
+//       });
+
+//       await browser.close();
+//       return Buffer.from(pdfUint8Array);
+//     })();
+
+//     res.set({
+//       "Content-Type": "application/pdf",
+//       "Content-Disposition": 'attachment; filename="stock_report.pdf"',
+//       "Content-Length": pdfBuffer.length,
+//     });
+
+//     // res.status(200).json({ success: true, data: products ,pdfBuffer});
+//     res.send(pdfBuffer);
+//   } catch (error) {
+//     console.error("Error fetching vendor stock report:", error);
+//     res.status(500).json({ success: false, message: "Internal server error" });
+//   }
+// };
+
+export const onlineStockReport = async (req, res) => {
+  const vendorId = req.params.id;
+
+  if (!vendorId) {
+    return res.status(400).json({ message: "Vendor ID is required" });
+  }
+
+  try {
+    const products = await productModel.aggregate([
+      {
+        $match: {
+          vendor_id: new mongoose.Types.ObjectId(vendorId),
+        },
+      },
+      {
+        $lookup: {
+          from: "categories",
+          localField: "category_id",
+          foreignField: "_id",
+          as: "category",
+        },
+      },
+
+      { $unwind: "$category" }, // the file
+      {
+        $match: {
+          "category.storeType": "online",
+        },
+      },
+      {
+        $lookup: {
+          from: "subcategories",
+          localField: "sub_category_id",
+          foreignField: "_id",
+          as: "subcategory",
+        },
+      },
+      { $unwind: "$subcategory" },
+    ]);
+
+    // products.forEach((product) => {
+    //   if (product.variants && product.variants.length > 0) {
+    //     product.variants = product.variants.map((variant) => {
+    //       let status = "Available";
+    //       if (variant.stock === 0) status = "Out of Stock";
+    //       else if (variant.stock < 20) status = "Low on Stock";
+    //       return {
+    //         ...variant,
+    //         stock_status: status,
+    //       };
+    //     });
+    //   }
+    // });
+
+    // template path
+    const templatePath = path.join(__dirname, "..", "views", "stockReport.hbs");
+    const templateHtml = fs.readFileSync(templatePath, "utf-8");
+    const template = handlebars.compile(templateHtml);
+    const heading = "Online Stock Report";
+    const html = template({ products, heading });
+
+    // pdf downloading and generations
+    const pdfBuffer = await (async () => {
+      const browser = await puppeteer.launch({
+        args: ["--no-sandbox", "--disable-set-uid-sandbox"],
+      });
+      const page = await browser.newPage();
+      await page.setContent(html, { waitUntil: "networkidle0" });
+
+      const pdfUint8Array = await page.pdf({
+        format: "A4",
+        printBackground: true,
+        margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
+        scale: 0.7,
+      });
+
+      await browser.close();
+      return Buffer.from(pdfUint8Array);
+    })();
+
+    // used for stockreport pdf name
+    const formatDateManually = (date) => {
+      const d = new Date(date);
+      return `${String(d.getDate()).padStart(2, "0")}-${String(
+        d.getMonth() + 1
+      ).padStart(2, "0")}-${d.getFullYear()}`;
+    };
+
+    res.set({
+      "Content-Type": "application/pdf",
+      "Content-Disposition": `attachment; filename=stock_report_${formatDateManually(
+        Date.now()
+      )}.pdf`,
+      "Content-Length": pdfBuffer.length,
+    });
+    res.send(pdfBuffer);
+  } catch (error) {
+    console.error("Error fetching vendor stock report:", error);
+    res.status(500).json({ success: false, message: "Internal server error" });
+  }
+};
+
+export const offlineStockReport = async (req, res) => {
+  const vendorId = req.params.id;
+
+  if (!vendorId) {
+    return res.status(400).json({ message: "Vendor ID is required" });
+  }
+
+  try {
+    const products = await productModel.aggregate([
+      {
+        $match: {
+          vendor_id: new mongoose.Types.ObjectId(vendorId),
+        },
+      },
+      {
+        $lookup: {
+          from: "categories",
+          localField: "category_id",
+          foreignField: "_id",
+          as: "category",
+        },
+      },
+
+      { $unwind: "$category" }, // the file
+      {
+        $match: {
+          "category.storeType": "offline",
+        },
+      },
+      {
+        $lookup: {
+          from: "subcategories",
+          localField: "sub_category_id",
+          foreignField: "_id",
+          as: "subcategory",
+        },
+      },
+      { $unwind: "$subcategory" },
+    ]);
+
+    // products.forEach((product) => {
+    //   if (product.variants && product.variants.length > 0) {
+    //     product.variants = product.variants.map((variant) => {
+    //       let status = "Available";
+    //       if (variant.stock === 0) status = "Out of Stock";
+    //       else if (variant.stock < 20) status = "Low on Stock";
+    //       return {
+    //         ...variant,
+    //         stock_status: status,
+    //       };
+    //     });
+    //   }
+    // });
+
+    // template path
+    const templatePath = path.join(__dirname, "..", "views", "stockReport.hbs");
+    const templateHtml = fs.readFileSync(templatePath, "utf-8");
+    const template = handlebars.compile(templateHtml);
+    const heading = "Offline Stock Report";
+    const html = template({ products, heading });
+
+    // pdf downloading and generations
+    const pdfBuffer = await (async () => {
+      const browser = await puppeteer.launch({
+        args: ["--no-sandbox", "--disable-set-uid-sandbox"],
+      });
+      const page = await browser.newPage();
+      await page.setContent(html, { waitUntil: "networkidle0" });
+
+      const pdfUint8Array = await page.pdf({
+        format: "A4",
+        printBackground: true,
+        margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
+        scale: 0.7,
+      });
+
+      await browser.close();
+      return Buffer.from(pdfUint8Array);
+    })();
+
+    // used for stockreport pdf name
+    const formatDateManually = (date) => {
+      const d = new Date(date);
+      return `${String(d.getDate()).padStart(2, "0")}-${String(
+        d.getMonth() + 1
+      ).padStart(2, "0")}-${d.getFullYear()}`;
+    };
+
+    res.set({
+      "Content-Type": "application/pdf",
+      "Content-Disposition": `attachment; filename=stock_report_${formatDateManually(
+        Date.now()
+      )}.pdf`,
+      "Content-Length": pdfBuffer.length,
+    });
+    res.send(pdfBuffer);
+  } catch (error) {
+    console.error("Error fetching vendor stock report:", error);
+    res.status(500).json({ success: false, message: "Internal server error" });
   }
 };

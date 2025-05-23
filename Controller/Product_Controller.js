@@ -3,16 +3,9 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 
-import { fileURLToPath } from "url";
-import handlebars from "handlebars";
-import puppeteer from "puppeteer";
-// for path
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 
 import { productModel } from "../Model/Product_schema.js";
-// import { categoryModel } from "../Model/Categories_schema.js";
+import { categoryModel } from "../Model/Categories_schema.js";
 // import { WishlistModel } from "../Model/Wishlist_schema.js";
 // import { subcategoryModel } from "../Model/SubCategory_schema.js";
 
@@ -319,7 +312,9 @@ export const createProduct = async (req, res) => {
     }
     const gstPercent = parseFloat(gst_percentage);
     if (isNaN(gstPercent) || gstPercent < 0 || gstPercent > 100) {
-      return res.status(400).json({ error: "GST percentage must be between 1 and 100" });
+      return res
+        .status(400)
+        .json({ error: "GST percentage must be between 1 and 100" });
     }
 
     // Check if the product already exists based on name, gender, size, and color in variants
@@ -333,14 +328,25 @@ export const createProduct = async (req, res) => {
       }
     }
 
+
     // Process uploaded files and prepare for saving
-    const images = req.files.map((file) => {
+    // const images = req.files.map((file) => {
+    //   const extension = path.extname(file.originalname);
+    //   const uniqueName = `product-${Date.now()}${extension}`;
+    //   const newPath = path.join("Assets/Products", uniqueName);
+    //   fs.renameSync(file.path, newPath);
+    //   return newPath;
+    // });
+
+    //  updated by kiran
+    const images =( req.files||[]).map((file) => {
       const extension = path.extname(file.originalname);
       const uniqueName = `product-${Date.now()}${extension}`;
       const newPath = path.join("Assets/Products", uniqueName);
       fs.renameSync(file.path, newPath);
       return newPath;
     });
+
 
     // Generate a product ID
     const productId = await generateProductId(category, name);
@@ -471,7 +477,7 @@ export const createProduct = async (req, res) => {
     console.error("Error in product creation:", error);
     res
       .status(500)
-      .json({ error: "Server error occurred while creating the product" });
+      .json({ error: "Server error occurred while creating the product"});
   }
 };
 
@@ -1283,10 +1289,6 @@ export const getAllProducts = async (req, res) => {
   }
 };
 
-
-
-
-
 // export const filterProducts = async (req, res) => {
 //   try {
 //     const { color = [], categoryId = "", price = [], size = [] } = req.body;
@@ -1403,9 +1405,11 @@ export const filterProducts = async (req, res) => {
     // Apply price filter (assumes price format is 'min-max')
     if (price.length > 0) {
       const [minPrice, maxPrice] = price[0]
-        .split("-")  // Split without spaces
-        .map((item) => parseInt(item.trim(), 10));  // Trim spaces and parse to integers
-      console.log(`Price filter: minPrice = ${minPrice}, maxPrice = ${maxPrice}`);
+        .split("-") // Split without spaces
+        .map((item) => parseInt(item.trim(), 10)); // Trim spaces and parse to integers
+      console.log(
+        `Price filter: minPrice = ${minPrice}, maxPrice = ${maxPrice}`
+      );
       if (!isNaN(minPrice) && !isNaN(maxPrice)) {
         filterConditions.price = { $gte: minPrice, $lte: maxPrice };
       }
@@ -1441,17 +1445,14 @@ export const filterProducts = async (req, res) => {
   }
 };
 
-
-
-
 export const productByPrice = async (req, res) => {
   try {
     const { price } = req.body;
     console.log(req.body);
     if (price && price.length > 0) {
       const [minPrice, maxPrice] = price
-        .split("-")  // Split by a hyphen without spaces
-        .map((item) => parseInt(item.trim(), 10));  // Trim any extra spaces and parse to integers
+        .split("-") // Split by a hyphen without spaces
+        .map((item) => parseInt(item.trim(), 10)); // Trim any extra spaces and parse to integers
       if (!isNaN(minPrice) && !isNaN(maxPrice)) {
         const priceFilter = { final_price: { $gte: minPrice, $lte: maxPrice } };
 
@@ -1551,9 +1552,9 @@ export const getProductById = async (req, res) => {
 
     const product = await productModel
       .findById(productId)
-      .populate("category_id","name")
-      .populate("sub_category_id","name")
-      .populate("vendor_id","name email");
+      .populate("category_id", "name")
+      .populate("sub_category_id", "name")
+      .populate("vendor_id", "name email");
     if (!product) {
       return res
         .status(404)
@@ -1666,145 +1667,24 @@ export const getRecentProducts = async (req, res) => {
   }
 };
 
-
 export const latestProducts = async (req, res) => {
-
   try {
-    const products = await productModel.find().sort({ createdAt: -1 }).limit(10);
+    const products = await productModel
+      .find()
+      .sort({ createdAt: -1 })
+      .limit(10);
     console.log(products);
-    res.status(200).json({ products, message: "Latest products fetched successfully" });
+    res
+      .status(200)
+      .json({ products, message: "Latest products fetched successfully" });
   } catch (error) {
     console.error("Error fetching latest products:", error);
-    res.status(500).json({ message: "Error fetching latest products", error: error.message });
-  }
-
-}
-
-
-// export const stockReportDownload = async (req, res) => {
-//   try {
-//     const report = await productModel.find({})
-
-//     const templatePath = path.join(__dirname, 'views', 'stockTemplate.hbs')
-//     const templateHtml = fs.readFileSync(templatePath,'utf-8')
-//     const template = handlebars.compile(templateHtml)
-
-//     const html = template({ report })
-    
-//     const pdfBuffer = await (async () => {
-//       const browser = await puppeteer.launch({
-//         args: ["--no-sandbox","--disable-set-uid-sandbox"]
-//       })
-
-//       const page = await browser.newPage();
-//       await page.setContent(html, { waitUntil: "networkidle0" })
-
-//       const pdfUint8Array = await page.pdf({
-//         format: 'A4',
-//         printBackground: true,
-//         margin: { top: '10mm', bottom: '10mm', left: '10mm', right: '10mm' },
-//         scale:0.7
-//       })
-
-//       await browser.close()
-//       return Buffer.from(pdfUint8Array)
-
-//     })()
-
-//     const stockModel = new productModel({
-//       pdf: {
-//         data: pdfBuffer,
-//         contentType: "application/pdf",
-//       }
-//     });
-//     await stockModel.save()
-    
-//     res.set({
-//       "Content-Type": "application/pdf",
-//       "Content-Disposition": 'attachment; filename="stock_report.pdf"',
-//       "Content-Length": pdfBuffer.length,
-//     });
-
-
-//     // res.status(200).json({pdfBuffer, message: "Stock report has been download" });
-//     res.send(pdfBuffer)
-//   } catch (err) {
-//     console.error("Error Downloading Stock Report")
-//     res.status(500).json({ message: "Error Downloading Stock Report" });
-//   }
-// }
-
-
-export const stockReportDownload = async (req, res) => {
-  try {
-    //use lean() for displaying plain json data
-    const report = await productModel.find({}).lean(); // Get all products
-
-    
-    const updatedReport = await Promise.all(
-      report.map(async (product) => {
-        let stock_status = "Available";
-        if (product.total_stock <= 0) {
-          stock_status = "Out of Stock";
-        } else if (product.total_stock < 20) {
-          stock_status = "Low on Stock";
-        }
-
-        
-        await productModel.findByIdAndUpdate(product._id, { stock_status });
-
-        // Return updated product for rendering
-        return { ...product, stock_status };
-      })
-    );
-
-    // template
-    const templatePath = path.join(
-      __dirname,
-      "..",
-      "views",
-      "stockTemplate.hbs"
-    );
-    const templateHtml = fs.readFileSync(templatePath, "utf-8");
-    const template = handlebars.compile(templateHtml);
-
-    const html = template({ report: updatedReport });
-
-    const browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-
-    const page = await browser.newPage();
-    await page.setContent(html, { waitUntil: "networkidle0" });
-
-    const pdfBuffer = await page.pdf({
-      format: "A4",
-      printBackground: true,
-      margin: { top: "10mm", bottom: "10mm", left: "10mm", right: "10mm" },
-      scale: 0.7,
-    });
-    await browser.close();
-
-    const formatDateManually = (date) => {
-      const d = new Date(date);
-      return `${String(d.getDate()).padStart(2, "0")}-${String(
-        d.getMonth() + 1
-      ).padStart(2, "0")}-${d.getFullYear()}`;
-    };
-
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader(
-      "Content-Disposition",
-      `attachment; filename="stock_report_${formatDateManually(
-        Date.now()
-      )}.pdf"`
-    );
-    return res.send(pdfBuffer);
-  } catch (err) {
-    console.error("Error Downloading Stock Report", err);
-    if (!res.headersSent) {
-      res.status(500).json({ message: "Error Downloading Stock Report" });
-    }
+    res
+      .status(500)
+      .json({
+        message: "Error fetching latest products",
+        error: error.message,
+      });
   }
 };
 
