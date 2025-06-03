@@ -1,0 +1,1175 @@
+[{
+  "_id": {
+    "$oid": "68369b16e561db9f99f4c2dd"
+  },
+  "userName": "kiran",
+  "phone": "6382837147",
+  "date": "28/05/2025  10:41:50",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "68369b16e561db9f99f4c2de"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "68369b16e561db9f99f4c2df"
+      }
+    }
+  ],
+  "totalAmount": 1000,
+  "totalGST": 180,
+  "grandTotal": 1180,
+  "createdAt": {
+    "$date": "2025-05-28T05:11:50.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68369b7be561db9f99f4c2e4"
+  },
+  "userName": "kiran",
+  "phone": "6382837147",
+  "date": "28/05/2025  10:43:31",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 1,
+      "amount": 250,
+      "gst": 45,
+      "totalWithGST": 295,
+      "_id": {
+        "$oid": "68369b7be561db9f99f4c2e5"
+      }
+    }
+  ],
+  "totalAmount": 250,
+  "totalGST": 45,
+  "grandTotal": 295,
+  "createdAt": {
+    "$date": "2025-05-28T05:13:31.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836b0fbe561db9f99f4c327"
+  },
+  "userName": "kiran",
+  "phone": "6382837147",
+  "date": "28/05/2025  12:15:14",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836b0fbe561db9f99f4c328"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-28T06:45:15.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836b135e561db9f99f4c32d"
+  },
+  "userName": "kiran",
+  "phone": "6382837147",
+  "date": "28/05/2025  12:16:13",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836b135e561db9f99f4c32e"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-28T06:46:13.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836b7cee561db9f99f4c34b"
+  },
+  "userName": "kiran",
+  "phone": "6382837147",
+  "date": "28/05/2025  12:44:22",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 1,
+      "amount": 250,
+      "gst": 45,
+      "totalWithGST": 295,
+      "_id": {
+        "$oid": "6836b7cee561db9f99f4c34c"
+      }
+    }
+  ],
+  "totalAmount": 250,
+  "totalGST": 45,
+  "grandTotal": 295,
+  "createdAt": {
+    "$date": "2025-05-28T07:14:22.961Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836d67be1b5d0e2ca2f5e6d"
+  },
+  "userName": "kiran",
+  "phone": "063828 37147",
+  "date": "28/05/2025  14:55:15",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836d67be1b5d0e2ca2f5e6e"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-28T09:25:15.954Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836d6dc36ded561f0eced05"
+  },
+  "userName": "kiran",
+  "phone": "063828 37147",
+  "date": "28/05/2025  14:56:52",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836d6dc36ded561f0eced06"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-28T09:26:52.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836d71936ded561f0eced08"
+  },
+  "invoice_number": "INV-1748424472459",
+  "userName": "kiran",
+  "phone": "063828 37147",
+  "date": "28/05/2025  14:57:53",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836d71936ded561f0eced09"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-28T09:27:53.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836d76136ded561f0eced11"
+  },
+  "invoice_number": "INV-1748424543933",
+  "userName": "kiran",
+  "phone": "063828 37147",
+  "date": "28/05/2025  14:59:05",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6836d76136ded561f0eced12"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "68356daff009c0757983f2c6"
+      },
+      "name": "Trousers 001",
+      "price": 450,
+      "quantity": 1,
+      "amount": 450,
+      "gst": 81,
+      "totalWithGST": 531,
+      "_id": {
+        "$oid": "6836d76136ded561f0eced13"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 5,
+      "amount": 1250,
+      "gst": 225,
+      "totalWithGST": 1475,
+      "_id": {
+        "$oid": "6836d76136ded561f0eced14"
+      }
+    }
+  ],
+  "totalAmount": 2450,
+  "totalGST": 441,
+  "grandTotal": 2891,
+  "createdAt": {
+    "$date": "2025-05-28T09:29:05.410Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836e18e36ded561f0eced31"
+  },
+  "invoice_number": "INV-1748427149976",
+  "userName": "kiran",
+  "phone": "063828 37147",
+  "date": "28/05/2025  15:42:30",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6836e18e36ded561f0eced32"
+      }
+    }
+  ],
+  "totalAmount": 500,
+  "totalGST": 90,
+  "grandTotal": 590,
+  "createdAt": {
+    "$date": "2025-05-28T10:12:30.526Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837092036ded561f0eceeaa"
+  },
+  "invoice_number": "INV-1748437197585",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "28/05/2025  18:31:20",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936537272490d7d5d8d2f8"
+      },
+      "name": " Men Cargo Trousers",
+      "price": 350,
+      "quantity": 10,
+      "amount": 3500,
+      "gst": 630,
+      "totalWithGST": 4130,
+      "_id": {
+        "$oid": "6837092036ded561f0eceeab"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6837092036ded561f0eceeac"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936618272490d7d5d8d303"
+      },
+      "name": "Tracks",
+      "price": 350,
+      "quantity": 2,
+      "amount": 700,
+      "gst": 126,
+      "totalWithGST": 826,
+      "_id": {
+        "$oid": "6837092036ded561f0eceead"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 1,
+      "amount": 250,
+      "gst": 45,
+      "totalWithGST": 295,
+      "_id": {
+        "$oid": "6837092036ded561f0eceeae"
+      }
+    }
+  ],
+  "totalAmount": 5200,
+  "totalGST": 936,
+  "grandTotal": 6136,
+  "createdAt": {
+    "$date": "2025-05-28T13:01:20.137Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68370a4e36ded561f0eceeb0"
+  },
+  "invoice_number": "INV-1748437197585",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "28/05/2025  18:36:22",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936537272490d7d5d8d2f8"
+      },
+      "name": " Men Cargo Trousers",
+      "price": 350,
+      "quantity": 10,
+      "amount": 3500,
+      "gst": 630,
+      "totalWithGST": 4130,
+      "_id": {
+        "$oid": "68370a4e36ded561f0eceeb1"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "68370a4e36ded561f0eceeb2"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936618272490d7d5d8d303"
+      },
+      "name": "Tracks",
+      "price": 350,
+      "quantity": 2,
+      "amount": 700,
+      "gst": 126,
+      "totalWithGST": 826,
+      "_id": {
+        "$oid": "68370a4e36ded561f0eceeb3"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 1,
+      "amount": 250,
+      "gst": 45,
+      "totalWithGST": 295,
+      "_id": {
+        "$oid": "68370a4e36ded561f0eceeb4"
+      }
+    }
+  ],
+  "totalAmount": 5200,
+  "totalGST": 936,
+  "grandTotal": 6136,
+  "createdAt": {
+    "$date": "2025-05-28T13:06:22.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837e222053bf53078757c8e"
+  },
+  "invoice_number": "INV-1748492829988",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  09:57:14",
+  "paymentMethod": "",
+  "paid": false,
+  "items": [
+    {
+      "productId": {
+        "$oid": "68356daff009c0757983f2c6"
+      },
+      "name": "Trousers 001",
+      "price": 450,
+      "quantity": 3,
+      "amount": 1350,
+      "gst": 243,
+      "totalWithGST": 1593,
+      "_id": {
+        "$oid": "6837e222053bf53078757c8f"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6837e222053bf53078757c90"
+      }
+    }
+  ],
+  "totalAmount": 1850,
+  "totalGST": 333,
+  "grandTotal": 2183,
+  "createdAt": {
+    "$date": "2025-05-29T04:27:14.412Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837e23f053bf53078757c92"
+  },
+  "invoice_number": "INV-1748492829988",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  09:57:43",
+  "paymentMethod": "",
+  "paid": false,
+  "items": [
+    {
+      "productId": {
+        "$oid": "68356daff009c0757983f2c6"
+      },
+      "name": "Trousers 001",
+      "price": 450,
+      "quantity": 3,
+      "amount": 1350,
+      "gst": 243,
+      "totalWithGST": 1593,
+      "_id": {
+        "$oid": "6837e23f053bf53078757c93"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6837e23f053bf53078757c94"
+      }
+    }
+  ],
+  "totalAmount": 1850,
+  "totalGST": 333,
+  "grandTotal": 2183,
+  "createdAt": {
+    "$date": "2025-05-29T04:27:43.360Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837e296053bf53078757ca1"
+  },
+  "invoice_number": "INV-1748492946100",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  09:59:10",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936537272490d7d5d8d2f8"
+      },
+      "name": " Men Cargo Trousers",
+      "price": 350,
+      "quantity": 3,
+      "amount": 1050,
+      "gst": 189,
+      "totalWithGST": 1239,
+      "_id": {
+        "$oid": "6837e296053bf53078757ca2"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6837e296053bf53078757ca3"
+      }
+    }
+  ],
+  "totalAmount": 1550,
+  "totalGST": 279,
+  "grandTotal": 1829,
+  "createdAt": {
+    "$date": "2025-05-29T04:29:10.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837e31c053bf53078757ca5"
+  },
+  "invoice_number": "INV-1748492946100",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  10:01:24",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936537272490d7d5d8d2f8"
+      },
+      "name": " Men Cargo Trousers",
+      "price": 350,
+      "quantity": 3,
+      "amount": 1050,
+      "gst": 189,
+      "totalWithGST": 1239,
+      "_id": {
+        "$oid": "6837e31c053bf53078757ca6"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6837e31c053bf53078757ca7"
+      }
+    }
+  ],
+  "totalAmount": 1550,
+  "totalGST": 279,
+  "grandTotal": 1829,
+  "createdAt": {
+    "$date": "2025-05-29T04:31:24.866Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837e3c4053bf53078757ca9"
+  },
+  "invoice_number": "INV-1748492946100",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  10:04:12",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936537272490d7d5d8d2f8"
+      },
+      "name": " Men Cargo Trousers",
+      "price": 350,
+      "quantity": 3,
+      "amount": 1050,
+      "gst": 189,
+      "totalWithGST": 1239,
+      "_id": {
+        "$oid": "6837e3c4053bf53078757caa"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 2,
+      "amount": 500,
+      "gst": 90,
+      "totalWithGST": 590,
+      "_id": {
+        "$oid": "6837e3c4053bf53078757cab"
+      }
+    }
+  ],
+  "totalAmount": 1550,
+  "totalGST": 279,
+  "grandTotal": 1829,
+  "createdAt": {
+    "$date": "2025-05-29T04:34:12.866Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68380ca92e41d700444fa8f8"
+  },
+  "invoice_number": "INV-1748503720246",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  12:58:41",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936b40272490d7d5d8d3c0"
+      },
+      "name": "MensTracks Pants",
+      "price": 355,
+      "quantity": 2,
+      "amount": 710,
+      "gst": 127.8,
+      "totalWithGST": 837.8,
+      "_id": {
+        "$oid": "68380ca92e41d700444fa8f9"
+      }
+    }
+  ],
+  "totalAmount": 710,
+  "totalGST": 127.8,
+  "grandTotal": 837.8,
+  "createdAt": {
+    "$date": "2025-05-29T07:28:41.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68380cc92e41d700444fa8fe"
+  },
+  "invoice_number": "INV-1748503752487",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  12:59:13",
+  "paymentMethod": "UPI",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 9,
+      "amount": 2250,
+      "gst": 405,
+      "totalWithGST": 2655,
+      "_id": {
+        "$oid": "68380cc92e41d700444fa8ff"
+      }
+    }
+  ],
+  "totalAmount": 2250,
+  "totalGST": 405,
+  "grandTotal": 2655,
+  "createdAt": {
+    "$date": "2025-05-29T07:29:13.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68380eaf1a5e913eafb22312"
+  },
+  "invoice_number": "INV-1748504237477",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:07:19",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 8,
+      "amount": 2000,
+      "gst": 360,
+      "totalWithGST": 2360,
+      "_id": {
+        "$oid": "68380eaf1a5e913eafb22313"
+      }
+    }
+  ],
+  "totalAmount": 2000,
+  "totalGST": 360,
+  "grandTotal": 2360,
+  "createdAt": {
+    "$date": "2025-05-29T07:37:19.699Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68380fb71a5e913eafb22318"
+  },
+  "invoice_number": "INV-1748504503314",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:11:43",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "68380fb71a5e913eafb22319"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-29T07:41:43.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838103d1a5e913eafb2231e"
+  },
+  "invoice_number": "INV-1748504636744",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:13:57",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936618272490d7d5d8d303"
+      },
+      "name": "Tracks",
+      "price": 350,
+      "quantity": 8,
+      "amount": 2800,
+      "gst": 504,
+      "totalWithGST": 3304,
+      "_id": {
+        "$oid": "6838103d1a5e913eafb2231f"
+      }
+    }
+  ],
+  "totalAmount": 2800,
+  "totalGST": 504,
+  "grandTotal": 3304,
+  "createdAt": {
+    "$date": "2025-05-29T07:43:57.611Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838106b1a5e913eafb22324"
+  },
+  "invoice_number": "INV-1748504683064",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:14:43",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 7,
+      "amount": 1750,
+      "gst": 315,
+      "totalWithGST": 2065,
+      "_id": {
+        "$oid": "6838106b1a5e913eafb22325"
+      }
+    }
+  ],
+  "totalAmount": 1750,
+  "totalGST": 315,
+  "grandTotal": 2065,
+  "createdAt": {
+    "$date": "2025-05-29T07:44:43.937Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683810ab1a5e913eafb2232d"
+  },
+  "invoice_number": "INV-1748504746999",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:15:47",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 7,
+      "amount": 1750,
+      "gst": 315,
+      "totalWithGST": 2065,
+      "_id": {
+        "$oid": "683810ab1a5e913eafb2232e"
+      }
+    }
+  ],
+  "totalAmount": 1750,
+  "totalGST": 315,
+  "grandTotal": 2065,
+  "createdAt": {
+    "$date": "2025-05-29T07:45:47.502Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683811391a5e913eafb22333"
+  },
+  "invoice_number": "INV-1748504888233",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:18:09",
+  "paymentMethod": "UPI",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 9,
+      "amount": 2250,
+      "gst": 405,
+      "totalWithGST": 2655,
+      "_id": {
+        "$oid": "683811391a5e913eafb22334"
+      }
+    }
+  ],
+  "totalAmount": 2250,
+  "totalGST": 405,
+  "grandTotal": 2655,
+  "createdAt": {
+    "$date": "2025-05-29T07:48:09.012Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838116a1a5e913eafb22339"
+  },
+  "invoice_number": "INV-1748504937848",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:18:58",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "6838116a1a5e913eafb2233a"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-29T07:48:58.644Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683811b31a5e913eafb2233f"
+  },
+  "invoice_number": "INV-1748505010959",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:20:11",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 3,
+      "amount": 750,
+      "gst": 135,
+      "totalWithGST": 885,
+      "_id": {
+        "$oid": "683811b31a5e913eafb22340"
+      }
+    }
+  ],
+  "totalAmount": 750,
+  "totalGST": 135,
+  "grandTotal": 885,
+  "createdAt": {
+    "$date": "2025-05-29T07:50:11.652Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683811fc1a5e913eafb2234a"
+  },
+  "invoice_number": "INV-1748505083369",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:21:24",
+  "paymentMethod": "Cash",
+  "paid": true,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 7,
+      "amount": 1750,
+      "gst": 315,
+      "totalWithGST": 2065,
+      "_id": {
+        "$oid": "683811fc1a5e913eafb2234b"
+      }
+    }
+  ],
+  "totalAmount": 1750,
+  "totalGST": 315,
+  "grandTotal": 2065,
+  "createdAt": {
+    "$date": "2025-05-29T07:51:24.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683812301a5e913eafb22350"
+  },
+  "invoice_number": "INV-1748505132104",
+  "userName": "kiran",
+  "phone": "9999999999",
+  "date": "29/05/2025  13:22:16",
+  "paymentMethod": "",
+  "paid": false,
+  "items": [
+    {
+      "productId": {
+        "$oid": "67936467272490d7d5d8d2ee"
+      },
+      "name": "Trousers",
+      "price": 250,
+      "quantity": 8,
+      "amount": 2000,
+      "gst": 360,
+      "totalWithGST": 2360,
+      "_id": {
+        "$oid": "683812301a5e913eafb22351"
+      }
+    }
+  ],
+  "totalAmount": 2000,
+  "totalGST": 360,
+  "grandTotal": 2360,
+  "createdAt": {
+    "$date": "2025-05-29T07:52:16.862Z"
+  },
+  "__v": 0
+}]

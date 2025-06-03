@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { type } from "os";
 
 const productSchema = new mongoose.Schema(
   {
@@ -60,11 +59,11 @@ const productSchema = new mongoose.Schema(
           type: Boolean,
           default: false, // Track if the variant is out of stock
         },
-        stock_status: {
-          type: String,
-          // enum: ["Low on Stock", "Available", "Out of Stock"],
-          default: "Available", //changes when the stock is below 20
-        },
+        // stock_status: {
+        //   type: String,
+        //   // enum: ["Low on Stock", "Available", "Out of Stock"],
+        //   default: "Available", //changes when the stock is below 20
+        // },
       },
     ],
     product_details: [
@@ -165,11 +164,11 @@ const productSchema = new mongoose.Schema(
       min: 0, // Must be non-negative
       max: 5, // Rating should not exceed 5
     },
-    // storeType: {
-    //   type: String,
-    //   enum: ["online", "offline", "both"], // Specifies the store type
-    //   default: "online", // Default is online store
-    // },
+    storeType: {
+      type: String,
+      enum: ["online", "offline", "both"], // Specifies the store type
+      default: "online", // Default is online store
+    },
     is_deleted: {
       type: Boolean,
       default: false, // Track if the product is deleted
@@ -178,4 +177,4 @@ const productSchema = new mongoose.Schema(
   { timestamps: true } // Automatically manage createdAt and updatedAt
 );
 
-export const productModel = mongoose.model("Product", productSchema);
+export const productModel = mongoose.model("products", productSchema);

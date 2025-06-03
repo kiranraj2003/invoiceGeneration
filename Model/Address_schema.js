@@ -4,7 +4,7 @@ import { type } from "os";
 const addressSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "users", // Reference to the User schema
+    ref: "User", // Reference to the User schema
     required: true,
   },
   customerType: {
@@ -63,4 +63,4 @@ addressSchema.pre("save", function (next) {
   next();
 });
 
-export const addressModel = mongoose.model("address", addressSchema);
+export const addressModel = mongoose.model("Address", addressSchema);

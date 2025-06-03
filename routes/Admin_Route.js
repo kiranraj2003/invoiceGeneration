@@ -1,14 +1,17 @@
 import express from "express";
 import multer from "multer";
 import path from "path";
-import * as Admin from "../Controller/Admin_Controller.js";
+// import * as Admin from "../Controller/Admin_Controller.js";
+import * as Admin from '../Controller/Admin_Controller.js'
 import * as User from "../Controller/User_Controller.js";
 import * as Category from "../Controller/Category_Controller.js";
 import * as Product from "../Controller/Product_Controller.js";
-import * as Review from "../Controller/Review_Controller.js";
+// import * as Review from "../Controller/Review_Controller.js";
 import * as Vendor from "../Controller/Vendor_Controller.js";
 import * as Order from "../Controller/Order_controller.js"
 import * as SubCategory from "../Controller/SubCategory_Controller.js";
+// updated by kiran
+import * as StockReport from "../Controller/StockReport_Controller.js"
 // import { authMiddleware } from "../Controller/Cart_Controller.js";
 const AdminRoute = express.Router();
 
@@ -86,9 +89,22 @@ AdminRoute.get("/allOrders",Admin.authMiddleware,Order.getAllOrders)
 AdminRoute.get("/getfailedOrder",Admin.authMiddleware,Order.failureOrder)
 // reviews
 
+// AdminRoute.get(
+//   "/reviews/highestRatedProducts",
+//   Admin.authMiddleware,
+//   Review.getHighestRatedProducts
+// );
+
+// online and offline stock report - updated by kiran
 AdminRoute.get(
-  "/reviews/highestRatedProducts",
+  "/onlinevendorreport",
   Admin.authMiddleware,
-  Review.getHighestRatedProducts
+  StockReport.adminOnlineStockReport
+);
+
+AdminRoute.get(
+  "/offlinevendorreport",
+  Admin.authMiddleware,
+  StockReport.adminOfflineStockReport
 );
 export default AdminRoute;
